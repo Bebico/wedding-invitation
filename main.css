@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+  text-align: center;
+}
+
+.cover {
+  background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg) no-repeat 70% center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: table;
+}
+
+.main_head {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.start {
+  width: 100%;
+  background-color: hsla(100, 0%, 0%, 0.6);
+  position: relative;
+  top: 30px;
+}
+
+.headline {
+  color: #d2ba87;
+  font-size: 4rem;
+  font-family: 'Great Vibes', cursive;
+  padding: .5rem;
+}
+
+.tagline {
+  color: lightgrey;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: white;
+  height: 1px;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.date {
+  color: lightgrey;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.date::before {
+  display: inline-block;
+  content: "";
+  background-color: white;
+  height: 1.5px;
+  width: 3%;
+  margin: .5rem;
+}
+
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: white;
+  height: 1.5px;
+  width: 3%;
+  margin: .5rem;
+}
+
+img {
+  width: 50%;
+}
+
+.section-headline {
+  font-size: 3.5rem;
+  font-family: 'Great Vibes', cursive;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.locations p {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.program {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+  padding: 1rem .5rem;
+}
+
+.quota {
+  font-size: 1.3rem;
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+
+.section-headline {
+  font-size: 4rem;
+  text-align: center;
+}
+
+
+.program p {
+  line-height: 1.7rem;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.gifts p {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.faq {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+  padding: 0rem .5rem;
+  text-align: left;
+}
+
+.faq h1 {
+  font-size: 2.5rem;
+}
+
+.faq h2 {
+    padding-left: 0px;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+
+.question {
+  padding-bottom: .3rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.answer {
+  padding-bottom: 1.4rem;
+  font-size: 1.2rem;
+}
+
+.contact p {
+  font-size: 1.3rem;
+  padding: 1rem;
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: #d2ba87;
+}
+
+footer {
+  background: hsla(100,0%,0%,.6);
+  color: white;
+  font-size: 1.2rem;
+  height: 10vh;
+  width: 100%;
+}
+
+.interogations {
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .interogations::after {
+    display: inline-block;
+    content: "";
+    background-color: #d2ba87;
+    height: 2px;
+    width: 40%;
+    margin: 0 5.5rem;
+    text-align: center;
+  }
+
+  .blurb::after {
+    display: inline-block;
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 50%;
+    margin: 1rem;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .start {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .blurb {
+    display: inline-block;
+    width: 30vw;
+    margin-bottom: 1rem;
+  }
+
+  .detailed {
+    margin: 0 auto;
+    width: 35%;
+  }
+
+  .gifts {
+    display: inline-block;
+    width: 33%;
+  }
+
+  .interogations {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+  }
+
+  .faq h1 {
+    text-align: center;
+  }
+}
+
+@media (min-width 720px) {
+  .interogations {
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+  }
+
+}
+
+/* help colors */
+/* article {
+  background-color: hsl(300,100%,50%, .5);
+}
+.locations {
+  background-color: hsl(300,100%,50%, .5);
+}
+.program {
+  background-color: hsl(250,100%,50%, .5);
+}
+.gifts {
+  background-color: hsl(200,100%,50%, .5);
+}
+.faq {
+  background-color: hsl(150,100%,50%, .5);
+}
+.contact {
+  background-color: hsl(100,100%,50%, .5);
+} */
+
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Muli', sans-serif; */

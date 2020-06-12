@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 body {
-  background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+  background: url(media/wedding-landing-background.png);
   text-align: center;
 }
 
 .cover {
-  background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg) no-repeat 70% center;
+  background: url(media/wedding-landing-cover.jpg) no-repeat 70% center;
   background-size: cover;
   height: 100vh;
   width: 100%;
